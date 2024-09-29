@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drive-lo Bike & Taxi Booking App</title>
+    <link rel="stylesheet" href="drive lo.css">
+</head>
+<body>
+    <header>
+        <h1>Drive-lo Bike & Taxi Booking Service</h1>
+    </header>
+
+    <main>
+        <section id="booking-form">
+            <h2>Book a Ride</h2>
+            <form id="rideForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="rideType">Select Ride:</label>
+                <select id="rideType" name="rideType" required>
+                    <option value="bike">Bike</option>
+                    <option value="taxi">Taxi</option>
+                    <option value="Auto">Auto</option>
+                </select>
+                
+                <label for="pickup">Pickup Location:</label>
+                <input type="text" id="pickup" name="pickup" required>
+                
+                <label for="destination">Destination:</label>
+                <input type="text" id="destination" name="destination" required>
+                
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+        <section id="ride-list">
+            <h2>Booked Rides</h2>
+            <ul id="bookedRides"></ul>
+        </section>
+    </main>
+
+    <script src="drive lo.js"></script>
+</body>
+</html>
